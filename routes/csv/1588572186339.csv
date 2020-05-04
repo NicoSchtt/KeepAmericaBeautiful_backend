@@ -1,0 +1,3 @@
+datapoint_id,latitude,longitude,kab_rank,litter_count,date_taken
+1,33,-117,4,10,Mon Mar 30 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+2,33.4,-117.1,2,4,Sun Mar 29 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
