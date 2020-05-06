@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    var Point = sequelize.define('Trash', {
+    var Point = sequelize.define('SanMarcos', {
         datapoint_id: {
             primaryKey: true,
             type: DataTypes.INTEGER

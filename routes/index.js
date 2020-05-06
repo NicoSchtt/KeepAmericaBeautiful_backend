@@ -3,13 +3,8 @@ var router = express.Router();
 var models  = require('../models');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
 router.get('/export', async function (req, res, next) {
-  const trash = await models.Trash.findAll({raw: true});
+  const trash = await models.SanMarcos.findAll({raw: true});
   const name = __dirname + '/csv/'+ new Date().getTime() +'.csv';
   const csvWriter = createCsvWriter({
     path: name,
@@ -30,7 +25,7 @@ router.get('/export', async function (req, res, next) {
 });
 
 router.get('/map', async function (req, res, next) {
-  const trash = await models.Trash.findAll({raw: true});
+  const trash = await models.SanMarcos.findAll({raw: true});
   res.send(trash);
 });
 
